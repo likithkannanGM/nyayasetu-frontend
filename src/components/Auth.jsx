@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 // ─── API CONFIG ───────────────────────────────────────────────────────────────
-const API = "http://localhost/nyayasetu-api/auth";
+const API = "https://nyayasetu.infinityfreeapp.com/nyayasetu-api/auth";
+
 
 const api = {
   getToken:    ()  => localStorage.getItem("nyaya_token"),
