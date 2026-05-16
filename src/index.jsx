@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Auth from "./components/Auth";
 import NyayaSetuV2 from "./NyayaSetuV2";
 
-const API = "https://nyayasetu.infinityfreeapp.com/nyayasetu-api/auth";
+const API = "http://localhost/nyayasetu-api/auth";
 
 
 export default function Index() {

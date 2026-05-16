@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 // ─── CONFIGURATION ────────────────────────────────────────────────────────────
 const OLLAMA_MODEL = "mistral";
-const OLLAMA_BASE = " https://locking-virtue-crawford-properties.trycloudflare.com";
+const OLLAMA_BASE = "http://localhost:11434";
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const LANGUAGES = [
