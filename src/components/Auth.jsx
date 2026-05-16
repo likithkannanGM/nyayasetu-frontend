@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // ─── API CONFIG ───────────────────────────────────────────────────────────────
-const API = import.meta.env.VITE_API_URL || "http://localhost/nyayasetu-api/auth";
+const API = "https://nyayasetu.infinityfreeapp.com/nyayasetu-api/auth";
 
 
 const api = {
