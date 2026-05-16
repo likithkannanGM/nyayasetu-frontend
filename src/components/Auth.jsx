@@ -1,8 +1,7 @@
 import { useState } from "react";
 
 // ─── API CONFIG ───────────────────────────────────────────────────────────────
-const API = "https://molasses-squint-finlike.ngrok-free.dev";
-
+const API = "https://molasses-squint-finlike.ngrok-free.dev/nyayasetu-api/auth";
 
 const api = {
   getToken:    ()  => localStorage.getItem("nyaya_token"),

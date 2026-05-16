@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import Auth from "./components/Auth";
 import NyayaSetuV2 from "./NyayaSetuV2";
 
-const API = "https://molasses-squint-finlike.ngrok-free.dev";
-
+const API = "https://molasses-squint-finlike.ngrok-free.dev/nyayasetu-api/auth";
 
 export default function Index() {
   const [session, setSession] = useState(null);
