@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // ─── API CONFIG ───────────────────────────────────────────────────────────────
-const API = "https://nyayasetu.infinityfreeapp.com/nyayasetu-api/auth";
+const API = "https://molasses-squint-finlike.ngrok-free.dev";
 
 
 const api = {

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Auth from "./components/Auth";
 import NyayaSetuV2 from "./NyayaSetuV2";
 
-const API = "https://nyayasetu.infinityfreeapp.com/nyayasetu-api/auth";
+const API = "https://molasses-squint-finlike.ngrok-free.dev";
 
 
 export default function Index() {

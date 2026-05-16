@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 // ─── CONFIGURATION ────────────────────────────────────────────────────────────
 const OLLAMA_MODEL = "mistral";
-const OLLAMA_BASE =  "https://squad-compression-salary-produced.trycloudflare.com";
+const OLLAMA_BASE =  "https://molasses-squint-finlike.ngrok-free.dev ";
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const LANGUAGES = [
