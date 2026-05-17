@@ -13,8 +13,22 @@ const api = {
   async post(endpoint, body) {
     const res = await fetch(`${API}/${endpoint}.php`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true",   // ← add this
+      },
       body: JSON.stringify(body),
+    });
+    return res.json();
+  },
+
+  async get(endpoint) {
+    const token = api.getToken();
+    const res = await fetch(`${API}/${endpoint}.php`, {
+      headers: {
+        "Authorization": `Bearer ${token}`,
+        "ngrok-skip-browser-warning": "true",   // ← add this
+      },
     });
     return res.json();
   },

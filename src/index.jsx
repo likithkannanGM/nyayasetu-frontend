@@ -14,6 +14,7 @@ export default function Index() {
 
     fetch(`${API}/me.php`, {
       headers: { Authorization: `Bearer ${token}` },
+      "ngrok-skip-browser-warning": "true",
     })
       .then(r => r.json())
       .then(data => {
@@ -38,7 +39,7 @@ export default function Index() {
   const handleLogout = async () => {
     const token = localStorage.getItem("nyaya_token");
     if (token) {
-      try { await fetch(`${API}/logout.php`, { headers: { Authorization: `Bearer ${token}` } }); }
+      try { await fetch(`${API}/logout.php`, { headers: { Authorization: `Bearer ${token}` ,"ngrok-skip-browser-warning": "true",} }); }
       catch {} // fine if WAMP offline
     }
     localStorage.removeItem("nyaya_token");
