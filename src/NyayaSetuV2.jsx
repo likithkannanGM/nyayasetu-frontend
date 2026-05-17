@@ -1570,16 +1570,16 @@ Include 5 steps. Simple non-legal language.`
           </div>
 
           <div className="nav-right">
-            <Tooltip text={ollamaStatus === "online" ? "Ollama is running" : ollamaStatus === "offline" ? "Ollama is offline" : "Checking Ollama…"}>
-              <button className={`nav-status ${ollamaStatus}`} onClick={checkOllama}>
-                <div className={`status-dot ${ollamaStatus === "checking" ? "pulse" : ""}`} />
-                <span>{ollamaStatus === "online" ? "Ollama Online" : ollamaStatus === "offline" ? "Ollama Offline" : "Checking…"}</span>
-              </button>
-            </Tooltip>
-            <button className="nav-ham" onClick={() => setMobileMenu(!mobileMenu)}>
-              {mobileMenu ? Icons.x(22) : Icons.menu(22)}
-            </button>
-          </div>
+  <Tooltip text={ollamaStatus === "online" ? "Ollama is running" : ollamaStatus === "offline" ? "Ollama is offline" : "Checking Ollama…"}>
+    <button className={`nav-status ${ollamaStatus}`} onClick={checkOllama}>
+      <div className={`status-dot ${ollamaStatus === "checking" ? "pulse" : ""}`} />
+      <span>{ollamaStatus === "online" ? "Ollama Online" : ollamaStatus === "offline" ? "Ollama Offline" : "Checking…"}</span>
+    </button>
+  </Tooltip>
+  <button className="nav-ham" onClick={() => setMobileMenu(!mobileMenu)}>
+    {mobileMenu ? Icons.x(22) : Icons.menu(22)}
+  </button>
+</div>
         </nav>
 
         {/* PAGES */}
